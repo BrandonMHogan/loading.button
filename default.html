@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="loading.button.js"></script>
+</head>
+<body>
+
+<form>
+<button id="loginButton" class="lw-button control-btn-enter" data-color="lw-login"
+		data-style="slide-up" onclick="return false;" title="slide-right">
+	<span class="lw-label">
+		Submit Button
+	</span>
+	<span class="lw-button-spinner"></span>
+</button>
+</form>
+
+<script>
+$(document).ready(function () {
+var passwordReset = new LoadingButton($('#loginButton'), "#a3ffa1");
+});
+//passwordReset.Fail("@Resources.Strings.FormNotComplete")
+//passwordReset.Success();
+//passwordReset.Reset(1000);
+</script>
+
+</body>
